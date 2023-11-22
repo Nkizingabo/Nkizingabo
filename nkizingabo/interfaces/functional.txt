@@ -1,0 +1,13 @@
+public class finterface{
+    public static void main(String[] args) {
+        MathOperation addition = (a, b) -> a + b;
+        System.out.println("Addition: " + addition.operate(5, 3)); // Outputs "Addition: 8"
+    }
+}
+// Define a functional interface with a single abstract method
+@FunctionalInterface
+interface MathOperation {
+    int operate(int a, int b);
+}
+
+// Usage of a lambda expression to implement the interface
